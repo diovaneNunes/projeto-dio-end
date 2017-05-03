@@ -1,0 +1,25 @@
+{
+  "name": "dio",
+  "homepage": "https://github.com/diovaneNunes/Dio_end",
+  "authors": [
+    "Diovane_Pacheti <frontendestudo@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "breakpoint-sass": "^2.7.1",
+    "sass-flex-mixin": "^1.0.3"
+  }
+}
