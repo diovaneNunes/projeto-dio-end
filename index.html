@@ -11,17 +11,18 @@
 	<link rel="icon" href="img/icone.png">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 	<header><!-- == Cabeçalho da pagina == -->
-		<div class="logo"><!-- == div que vai armazenar o logo == -->
+		<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"><!-- == div que vai armazenar o logo == -->
 			<a href="index.html" alt="linca para o inicio do site">
 				<img src="img/logo-topo.png" alt="foto do logo no topo da pagina">
 			</a>
 		</div><!-- fim da div logo -->
 		<div class="links">
-			<nav><!-- == div nav do menu principal da pagina == -->
+			<nav class="wow slideInDown" data-wow-duration="1s" data-wow-delay="1s"><!-- == div nav do menu principal da pagina == -->
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#">Sobre nos</a></li>
@@ -31,8 +32,8 @@
 				</ul>
 			</nav><!-- fim da tag "nav" -->
 			<ul class="social"><!-- esta ul vai armazenar as redes sociais  -->
-				<li><a href="https://github.com/diovaneNunes" alt="github" title="Git Hub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/diovane-pacheti-118589142/" alt="linkedin" title="Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+				<li class="wow slideInUp" data-wow-duration="1s" data-wow-delay="1s"><a href="https://github.com/diovaneNunes" alt="github" title="Git Hub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s"><a href="https://www.linkedin.com/in/diovane-pacheti-118589142/" alt="linkedin" title="Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 			</ul><!-- fim da ul das redes sociais  -->
 		</div>
 		<!-- tag "H1" e "P" que vao ser tituloe subtitulo da pagina -->
@@ -86,5 +87,17 @@
 		</div><!-- fim da div classe "logo-rodape" -->
 		<p>Todos os direitos reservados Dio-end</p>
 	</footer><!-- fim do rodape -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
+		<script>
+			$(function(){				
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+		</script>
 </body>
 </html>

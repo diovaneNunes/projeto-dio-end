@@ -1,14 +1,17 @@
 .botao
-	border: 2px solid $verde-escuro
+	border: 1px solid $verde-escuro
+	+border-radius(50px)
 	color: $verde-escuro
 	text-transform: uppercase
 	font-weight: $bold
 	+transition(.3s)
 	
 	&:hover
+		background: 
+			color: $verde-escuro
 		border-color: $verde
-		color: $verde	
+		color: $cinza-claro
 	
 	&:focus
-		border-color: $azul-escuro
-		color: $azul-escuro
+		border-color: $cinza-claro
+		color: $cinza-claro
