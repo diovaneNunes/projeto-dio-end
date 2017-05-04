@@ -1,0 +1,20 @@
+@import molecules/textos
+@import organisms/habilidades
+
+header
+	background:
+			image: url('../img/fundo-header.jpg')
+			position: top center
+			repeat: no-repeat
+			attachment: fixed
+			size: cover
+.foto
+		+clearfix
+		
+		img
+			float: right
+			margin: 10px 13px 0 0
+			width: 100px
+			height: 100px
+		+breakpoint($tablet)
+			margin: 0 0 30px
