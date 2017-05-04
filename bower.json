@@ -23,6 +23,7 @@
     "sass-flex-mixin": "^1.0.3"
   },
   "devDependencies": {
-    "wow": "wowjs#^1.1.2"
+    "wow": "wowjs#^1.1.2",
+    "imagehover.css": "*"
   }
 }
