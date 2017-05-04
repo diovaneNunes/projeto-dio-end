@@ -45,10 +45,21 @@
 			<section class="contato">
 				<div class="container">
 					<form action="">
+						<!-- div "form-group" Nome: -->
 						<div class="form-group">
-							<input type="text" pattern="[a-z\s]+$" maxlength="37" required>
+							<input type="text" pattern="^[A-Za-z0-9_]{1,15}$" maxlength="37" required>
 							<label>Nome</label>
 							<span class="bar"></span>
+						</div>
+						<!-- div "form-group" Email: -->	
+						<div class="form-group">
+						    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="37" required>
+						    <label>E-mail</label>
+						    <span class="bar"></span>
+					  </div>
+					  <!-- ====== div "form-group" button ======= -->
+					  <div class="form-group">
+							<button class="botao medio"><i class="fa fa-arrow-right"></i> Enviar Contato</button>
 						</div>
 					</form>
 				</div>
