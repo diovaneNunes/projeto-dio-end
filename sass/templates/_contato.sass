@@ -1,0 +1,36 @@
+
+header
+	background:
+			image: url('../img/fundo-header.jpg')
+			position: top center
+			repeat: no-repeat
+			attachment: fixed
+			size: cover
+
+.contato
+	form
+		.form-group
+			position: relative
+			margin-bottom: 2.4em
+
+		label
+			color: $cinza-label
+			+font-size(23px)
+			font-weight: $regular
+			font-family: 'Roboto', sans-serif
+			position: absolute
+			pointer-events: none
+			top: 10px
+			+transition(0.2s)
+		input
+			color: $cinza-input
+			+font-size(23px)
+			padding: 10px 0 10px 0
+			display: block
+			outline: none
+			border: none
+			border-bottom: 1px solid $cinza-label
+			width: 300px
+			
+
+
