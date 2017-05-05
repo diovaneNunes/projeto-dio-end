@@ -16,6 +16,15 @@
 </head>
 <body>
 	<header><!-- == Cabeçalho da pagina == -->
+	    <nav class="menu-responsivo"><!-- == div nav do menu responsivo da pagina == -->
+				<a class="btn-close">x</a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="portfolio.html">Protfolio</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav><!-- fim da tag "nav" -->
 		<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"><!-- == div que vai armazenar o logo == -->
 			<a href="index.html" alt="linca para o inicio do site">
 				<img src="img/logo-topo.png" alt="foto do logo no topo da pagina">
@@ -30,6 +39,8 @@
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav><!-- fim da tag "nav" -->
+
+			<button class="btn-menu" ><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
 			<ul class="social"><!-- esta ul vai armazenar as redes sociais  -->
 				<li class="wow slideInUp" data-wow-duration="1s" data-wow-delay="1s"><a href="https://github.com/diovaneNunes" alt="github" title="Git Hub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 				<li class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s"><a href="https://www.linkedin.com/in/diovane-pacheti-118589142/" alt="linkedin" title="Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
@@ -96,6 +107,15 @@
 					$(this).toggleClass('ativo');
 				});
 				new WOW().init();
+			});
+		</script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script>
+			$(".btn-menu").click(function(){
+				$(".menu-responsivo").show();
+			});
+			$(".btn-close").click(function(){
+				$(".menu-responsivo").hide();
 			});
 		</script>
 </body>
